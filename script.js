@@ -10,7 +10,7 @@ async function searchHolidays() {
   const [year, month, day] = dateInput.split("-");
   const country = "IN"; // You can change to "US", "GB", etc.
 
-  const url = `https://holidays.abstractapi.com/v1/?api_key=5e1df2d3e9954e12b7deed32b66231d7&country=${country}&year=${year}&month=${month}&day=${day}`;
+  const url = `https://holidays.abstractapi.com/v1/?api_key=API_key&country=${country}&year=${year}&month=${month}&day=${day}`;
 
   resultDiv.innerHTML = "<p>Fetching data...</p>";
 
