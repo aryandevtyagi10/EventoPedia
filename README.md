@@ -10,7 +10,7 @@
 - 🔌 Uses [Abstract Public Holidays API](https://www.abstractapi.com/holidays-api)
 
 ## 🚀 Live Preview
-Coming soon... (or deploy with GitHub Pages / Netlify)
+https://eventopedia.netlify.app/
 
 ## 📸 Screenshot
 ![screenshot](screenshot.png) <!-- Replace with actual screenshot file -->
