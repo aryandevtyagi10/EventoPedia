@@ -6,12 +6,36 @@
 
 body {
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  font-family: 'Segoe UI', sans-serif;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h2 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #00c6ff;
 }
 
 .container {
@@ -22,6 +46,7 @@ body {
   width: 90%;
   max-width: 500px;
   text-align: center;
+  margin: 40px auto;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
@@ -42,14 +67,27 @@ button {
   border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 button:hover {
   background: #0072ff;
+  transform: scale(1.05);
 }
 
 #result {
   margin-top: 20px;
   text-align: left;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto;
+  background: rgba(255, 255, 255, 0.05);
+  font-size: 14px;
 }
