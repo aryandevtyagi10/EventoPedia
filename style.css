@@ -14,23 +14,25 @@ body {
 }
 
 header {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  padding: 15px 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-header h2 {
+header .logo {
+  font-size: 26px;
   font-weight: 600;
-  font-size: 24px;
 }
 
 header nav a {
   color: #fff;
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 25px;
+  font-weight: 500;
   transition: color 0.3s ease;
 }
 
@@ -39,32 +41,44 @@ header nav a:hover {
 }
 
 .container {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
-  padding: 30px;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 40px 30px;
   width: 90%;
-  max-width: 500px;
+  max-width: 550px;
+  margin: 60px auto;
   text-align: center;
-  margin: 40px auto;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.container h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.container p {
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 input[type="date"] {
-  padding: 10px;
+  padding: 12px;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   margin: 15px 0;
-  width: 80%;
+  width: 85%;
   font-size: 16px;
+  outline: none;
 }
 
 button {
-  padding: 10px 20px;
+  padding: 12px 22px;
   border: none;
   background: #00c6ff;
   color: white;
-  border-radius: 10px;
+  font-weight: 500;
+  border-radius: 12px;
   cursor: pointer;
   font-size: 16px;
   transition: all 0.3s ease;
@@ -76,18 +90,25 @@ button:hover {
 }
 
 #result {
-  margin-top: 20px;
+  margin-top: 25px;
   text-align: left;
-  background: rgba(0, 0, 0, 0.3);
-  padding: 15px;
-  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 18px;
+  border-radius: 12px;
   font-size: 15px;
+  line-height: 1.6;
+}
+
+#result h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 
 footer {
   text-align: center;
-  padding: 20px 0;
+  padding: 25px 0;
   margin-top: auto;
   background: rgba(255, 255, 255, 0.05);
   font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
