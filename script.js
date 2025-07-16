@@ -2,15 +2,18 @@ async function searchHolidays() {
   const dateInput = document.getElementById("dateInput").value;
   const resultDiv = document.getElementById("result");
 
+  resultDiv.innerHTML = "";
+
   if (!dateInput) {
     resultDiv.innerHTML = "<p>Please select a date.</p>";
     return;
   }
 
   const [year, month, day] = dateInput.split("-");
-  const country = "IN"; 
+  const country = "IN";
+  const apiKey = "YOUR_API_KEY";  // Replace with your actual key
 
-  const url = `https://holidays.abstractapi.com/v1/?api_key=API_KEY&country=${country}&year=${year}&month=${month}&day=${day}`;
+  const url = `https://holidays.abstractapi.com/v1/?api_key=${apiKey}&country=${country}&year=${year}&month=${month}&day=${day}`;
 
   resultDiv.innerHTML = "<p>Fetching data...</p>";
 
@@ -28,6 +31,7 @@ async function searchHolidays() {
       output += `</ul>`;
       resultDiv.innerHTML = output;
     }
+
   } catch (err) {
     resultDiv.innerHTML = "<p>There was an error fetching the data.</p>";
     console.error(err);
